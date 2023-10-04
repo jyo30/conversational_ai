@@ -1,0 +1,44 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey"],
+        "responses": ["Hello! How can I assist you today?"]
+      },
+      {
+        "tag": "help",
+        "patterns": ["I need help", "Can you help me", "Help me with my account"],
+        "responses": ["Sure, what kind of help do you need with your account?"],
+        "context": ["account_help"]
+      },
+      {
+        "tag": "forgot_password",
+        "patterns": ["I forgot my password", "Reset password", "Password reset"],
+        "responses": ["No problem, please provide me with your email address and I will help you reset your password."],
+        "context": ["password_reset"]
+      },
+      {
+        "tag": "email_provided",
+        "patterns": ["@gmail.com"],
+        "responses": ["An email has been sent to {email} with instructions on how to reset your password."],
+        "context": ["password_reset"]
+      },
+      {
+        "tag": "email_provided_repeat",
+        "patterns": [],
+        "responses": ["An email has already been sent to {email} with instructions on how to reset your password."],
+        "context": ["password_reset"]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thank you", "Thanks"],
+        "responses": ["You're welcome, {name}!"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "Goodbye", "See you later"],
+        "responses": ["Goodbye, {name}!"]
+      }
+    ]
+  }
+  

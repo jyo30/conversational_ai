@@ -1,0 +1,70 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "Hey", "Hi there"],
+            "responses": ["Hello, how can I help you?"],
+            "context": ["none"]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": ["Goodbye!"],
+            "context": ["none"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot"],
+            "responses": ["You're welcome!", "Anytime!", "Glad I could help!"],
+            "context": ["none"]
+        },
+        {
+            "tag": "restaurant",
+            "patterns": ["Can you recommend a restaurant?", "Where should I eat?", "I'm hungry"],
+            "responses": ["What type of cuisine are you in the mood for?"],
+            "context": ["none"]
+        },
+        {
+            "tag": "restaurant_search",
+            "patterns": ["I want [chinese] food", "I want to eat [pizza]"],
+            "responses": ["I know a great place for that!"],
+            "context": ["restaurant"]
+        },
+        {
+            "tag": "restaurant_location",
+            "patterns": ["Where is it located?", "What's the address?", "Where can I find it?"],
+            "responses": ["It's located at 123 Main St."],
+            "context": ["restaurant_search"]
+        },
+        {
+            "tag": "restaurant_hours",
+            "patterns": ["What are the hours?", "When is it open?"],
+            "responses": ["It's open from 11am to 10pm."],
+            "context": ["restaurant_search"]
+        },
+        {
+            "tag": "laptop",
+            "patterns": ["Can you recommend a laptop?", "Which laptop should I buy?","i want to buy a laptop"],
+            "responses": ["What is your budget?"],
+            "context": ["laptop"]
+        },
+        {
+            "tag": "laptop_budget",
+            "patterns": ["I have a budget of [1000] dollars", "My budget is [500] dollars"],
+            "responses": ["I can recommend a few laptops within that budget."],
+            "context": ["laptop_budget"]
+        },
+        {
+            "tag": "laptop_brand",
+            "patterns": ["Which brand do you prefer?", "Do you have a preferred brand?"],
+            "responses": ["We have laptops from Dell, HP, and Lenovo."],
+            "context": ["laptop_budget"]
+        },
+        {
+            "tag": "laptop_recommendation",
+            "patterns": ["Can you recommend a laptop?", "Which one do you recommend?"],
+            "responses": ["Based on your budget and brand preference, I recommend the Dell XPS 13."],
+            "context": ["laptop_brand"]
+        }
+    ]
+}

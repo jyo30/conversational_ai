@@ -1,0 +1,58 @@
+{
+    "conversation": [
+        {
+            "sender": "RVBot",
+            "message": "jyo has joined the chat.",
+            "response": "",
+            "timestamp": "2023-04-06 10:54:36.242482"
+        },
+        {
+            "sender": "jyo",
+            "message": "",
+            "response": "RVBot: Hey, let's chat!",
+            "timestamp": "2023-04-06 10:54:36.251821"
+        },
+        {
+            "sender": "RVBot",
+            "message": "jyo has joined the chat.",
+            "response": "",
+            "timestamp": "2023-04-06 11:14:27.380689"
+        },
+        {
+            "sender": "RVBot",
+            "message": "jyo has joined the chat.",
+            "response": "",
+            "timestamp": "2023-04-06 11:18:51.364132"
+        },
+        {
+            "sender": "RVBot",
+            "message": "jyo has joined the chat.",
+            "response": "",
+            "timestamp": "2023-04-06 11:20:42.587989"
+        },
+        {
+            "sender": "RVBot",
+            "message": "jyo has joined the chat.",
+            "response": "",
+            "timestamp": "2023-04-06 13:58:31.812542"
+        },
+        {
+            "sender": "RVBot",
+            "message": "jyo has joined the chat.",
+            "response": "",
+            "timestamp": "2023-04-06 14:05:10.728375"
+        },
+        {
+            "sender": "RVBot",
+            "message": "jyo has joined the chat.",
+            "response": "",
+            "timestamp": "2023-04-06 14:15:53.482527"
+        },
+        {
+            "sender": "RVBot",
+            "message": "jyo has joined the chat.",
+            "response": "",
+            "timestamp": "2023-05-17 17:13:42.274457"
+        }
+    ]
+}

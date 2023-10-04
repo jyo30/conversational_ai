@@ -1,0 +1,73 @@
+{"intents":[
+    {
+    "tag": "book_flight",
+    "patterns": [
+        "I want to book a flight",
+        "Can you help me book a flight?",
+        "Book a flight for me please",
+        "I need to book a flight",
+        "Find me a flight"
+    ],
+    "responses": [
+        "Sure, I can help you book a flight. Where would you like to go?"
+    ],
+    "context": "flight_booking"
+},
+{
+    "tag": "places",
+    "patterns": [
+        "would you book a ticket to {destination}"
+    ],
+    "responses": [
+        "Okay, I'll search for the flights to {destination} . which type of flights do you prefer to fly? "
+    ],
+    "context": "flight_booking"
+    
+},
+{
+    "tag": "departure_date",
+    "patterns": [
+        "I want to leave on {departure_date}",
+        "Book me a flight leaving on {departure_date}",
+        "Can you find me flights leaving on {departure_date}?",
+        "I need to leave on {departure_date}"
+    ],
+    "responses": [
+        
+        "Sure, Booking ticket to {destination} is in progress"
+        
+    ],
+    "context": "flight_booking"
+},
+{
+    "tag": "find_cheapest_flight",
+    "patterns": [
+        "What's the cheapest flight to fly?"
+        
+    ],
+    "responses": [
+        "Okay, I'll search for the cheapest flights to {destination}. Which class do u prefer?"
+        
+    ],
+    
+    "context": "flight_booking"
+},
+
+
+{
+    "tag": "cabin_preference",
+    "patterns": [
+        "I want to fly {cabin_type} class",
+        "Can I book a {cabin_type} class seat?",
+        "I prefer {cabin_type} class",
+        "Book me a {cabin_type} class ticket"
+    ],
+    "responses": [
+        
+        "Sure thing, we'll look for {cabin_type} class flights. when would you like to leave?"
+    ],
+  
+    "context": "flight_booking"
+}
+]
+}

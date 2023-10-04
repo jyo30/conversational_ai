@@ -1,0 +1,108 @@
+{"intents":[
+    {
+    "tag": "book_flight",
+    "patterns": [
+        "I want to book a flight",
+        "Can you help me book a flight?",
+        "Book a flight for me please",
+        "I need to book a flight",
+        "Find me a flight"
+    ],
+    "responses": [
+        "Of course! Where would you like to fly to and when?",
+        "Sure, I can help you book a flight. Where would you like to go?",
+        "Absolutely, let's get started. Where are you flying from and when do you want to leave?",
+        "I'd be happy to help you book a flight. Where are you traveling to and when?",
+        "Certainly, where are you looking to fly and when do you want to depart?"
+    ],
+    "context": "flight_booking"
+},
+{
+    "tag": "places",
+    "patterns": [
+        "would you book a ticket to {destination}"
+    ],
+    "responses": [
+        "Okay, I'll search for the flights to {destination}"
+    ],
+    "context": "flight_booking"
+    
+},
+{
+    "tag": "departure_date",
+    "patterns": [
+        "I want to leave on {departure_date}",
+        "Book me a flight leaving on {departure_date}",
+        "Can you find me flights leaving on {departure_date}?",
+        "I need to leave on {departure_date}"
+    ],
+    "responses": [
+        "Got it. When do you plan on returning?",
+        "Sure, and when would you like to return?",
+        "Understood. Would you like to fly round-trip or one-way?"
+    ],
+    "context": "flight_booking"
+},
+{
+    "tag": "find_cheapest_flight",
+    "patterns": [
+        "What's the cheapest flight to {destination}?",
+        "Find me the least expensive flight to {destination}",
+        "I want to book the cheapest flight available to {destination}",
+        "What's the most affordable flight to {destination}?"
+    ],
+    "responses": [
+        "Okay, I'll search for the cheapest flights to {destination}. When are you planning to travel?",
+        "Sure, let me see what the cheapest options are for flights to {destination}. When do you want to leave?"
+    ],
+    "placeholders": ["{destination}"],
+    "context": "flight_booking"
+},
+{
+    "tag": "round_trip",
+    "patterns": [
+        "I want to book a round-trip flight",
+        "Book me a flight round-trip",
+        "Can you find me a round-trip flight?",
+        "I need to book a flight that is round-trip"
+    ],
+    "responses": [
+        "Great, let's find the best round-trip flights for you. Where are you departing from and when?",
+        "Certainly, I'll search for round-trip flights. Where are you flying from and when do you want to depart?",
+        "Sure, let's look for round-trip flights. Where would you like to fly from and when would you like to leave?"
+    ],
+    "context": "flight_booking"
+},
+{
+    "tag": "one_way_flight",
+    "patterns": [
+        "I want to book a one-way flight",
+        "Book me a one-way flight",
+        "Can you find me a flight that is one-way?",
+        "I need to book a flight that is one-way"
+    ],
+    "responses": [
+        "Okay, let's find the best one-way flights for you. Where are you departing from and when?",
+        "Certainly, I'll search for one-way flights. Where are you flying from and when do you want to depart?",
+        "Sure, let's look for one-way flights. Where would you like to fly from and when would you like to leave?"
+    ],
+    "context": "flight_booking"
+},
+{
+    "tag": "cabin_preference",
+    "patterns": [
+        "I want to fly {cabin_type} class",
+        "Can I book a {cabin_type} class seat?",
+        "I prefer {cabin_type} class",
+        "Book me a {cabin_type} class ticket"
+    ],
+    "responses": [
+        "Got it, we'll search for {cabin_type} class flights. Where are you flying from and when?",
+        "Okay, let's find {cabin_type} class flights. Where are you departing from and when?",
+        "Sure thing, we'll look for {cabin_type} class flights. Where would you like to fly from and when would you like to leave?"
+    ],
+    "placeholders": ["{cabin_type}"],
+    "context": "flight_booking"
+}
+]
+}
